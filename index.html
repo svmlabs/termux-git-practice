@@ -1,47 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Santhosh | Web Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santhosh Vishwamitra | Web Developer</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    header {
-      background: #020617;
-      padding: 40px 20px;
-    }
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    h1 {
-      color: #38bdf8;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
+  }
 
-    section {
-      padding: 40px 20px;
-    }
+  header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+  }
 
-    .card {
-      background: #020617;
-      margin: 20px auto;
-      max-width: 400px;
-      padding: 20px;
-      border-radius: 10px;
-    }
+  header h1 {
+    color: #38bdf8;
+    font-size: 2.5em;
+    margin: 0;
+  }
 
-    footer {
-      background: black;
-      padding: 15px;
-      font-size: 14px;
-      color: gray;
-    }
-  </style>
+  header p {
+    color: #94a3b8;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    color: #38bdf8;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+  }
+
+  a {
+    color: #38bdf8;
+    text-decoration: none;
+  }
+
+  a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #38bdf8;
+    color: #0f172a;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  a.button:hover {
+    background: #22d3ee;
+  }
+
+  footer {
+    text-align: center;
+    padding: 25px;
+    background: #020617;
+    font-size: 14px;
+    color: #94a3b8;
+  }
+
+  /* Buttons container for projects */
+  .project-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 2em; }
+    header p { font-size: 1em; }
+  }
+</style>
 </head>
 
 <body>
@@ -52,47 +117,42 @@
 </header>
 
 <section>
-  <h2>About Me</h2>
-
-  <div class="card">
-    <p>
-      I am a passionate web developer learning and building projects using
-      Termux, GitHub, Flask, and modern web tools.
-    </p>
-  </div>
+<h2>About Me</h2>
+<div class="card">
+  I am a passionate web developer learning and building projects using Termux, GitHub, Flask, and modern web tools.
+</div>
 </section>
 
 <section>
-  <h2>Skills</h2>
-
-  <div class="card">
-    HTML, CSS, JavaScript<br>
-    Python, Flask<br>
-    Git, GitHub, Termux
-  </div>
+<h2>Skills</h2>
+<div class="card">
+  HTML, CSS, JavaScript<br>
+  Python, Flask<br>
+  Git, GitHub, Termux
+</div>
 </section>
 
 <section>
-  <h2>Projects</h2>
-
-  <div class="card">
-    Termux Git Practice<br>
-    Flask Learning App<br>
-    Portfolio Website
+<h2>Projects</h2>
+<div class="card">
+  <div class="project-buttons">
+    <a href="https://github.com/svmlabs/termux-git-practice" class="button" target="_blank"><i class="fab fa-github"></i> Termux Git Practice</a>
+    <a href="#" class="button"><i class="fas fa-laptop-code"></i> Flask Learning App</a>
+    <a href="#" class="button"><i class="fas fa-file-code"></i> Portfolio Website</a>
   </div>
+</div>
 </section>
 
 <section>
-  <h2>Contact</h2>
-
-  <div class="card">
-    GitHub: svmlabs<br>
-    Email: santhushi5@gmail.com
-  </div>
+<h2>Contact</h2>
+<div class="card">
+  GitHub: <a href="https://github.com/svmlabs" target="_blank">svmlabs</a><br>
+  Email: <a href="mailto:santhoshvishwamitra@gmail.com">santhoshvishwamitra@gmail.com</a>
+</div>
 </section>
 
 <footer>
-  © 2026 SVM Labs | Built from Mobile using Termux
+© 2026 SVM Labs | Built from Mobile using Termux
 </footer>
 
 </body>
